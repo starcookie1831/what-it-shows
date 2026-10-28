@@ -21,7 +21,8 @@
   <h2>Parser</h2>
   <p>
     Day-first tenants send dates day first. The shared parser reads the month first, so 7 April lands
-    on 4 July. This is the app, email, and booking-v2 reports, apart from the one-day reports below.
+    on 4 July. This is the app, email, and booking-v2 reports. The desk's table keeps the one-day reports
+    inside this count.
   </p>
 
   <h2>Hint</h2>
