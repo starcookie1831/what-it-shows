@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./_app/immutable/entry/start.VF44qkDw.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BUL83H9o.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/X6vaSB0i.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DPShiWU6.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.CO9guZlG.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CLRbbdKk.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/B_ZEQf1M.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C-6Rxhr1.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CBpSbsvC.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.CLKmMoDe.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DYrkI5a_.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.DV_lzT1h.js" rel="modulepreload">
+		<!--e2jw2j--><!----><title>#4471 splits into three problems · support kb</title>
+		<link href="./_app/immutable/assets/2.CfPOHfCg.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><div class="kb svelte-e2jw2j"><header><a class="crumb svelte-e2jw2j" href="/kb">support desk · kb</a> <h1 class="svelte-e2jw2j">#4471 splits into three problems</h1> <p class="meta svelte-e2jw2j"><span>owner <b>Song Lee</b></span> <span class="status draft svelte-e2jw2j">draft</span> <span class="svelte-e2jw2j">reviewed 2026-10-28 · 0 days ago</span></p></header> <!--[-1--><!--]--> <main><p>#4471 holds every date report the desk merged, and the incident page calls that one known parser
+    bug. The reports are three problems. Each one needs its own ticket. The counts below are computed
+    from the export.</p> <h2>Parser</h2> <p>Day-first tenants send dates day first. The shared parser reads the month first, so 7 April lands
+    on 4 July. This is the app, email, and booking-v2 reports, apart from the one-day reports below.</p> <h2>Hint</h2> <p>booking-v3 prints <code>MM/DD/YYYY</code> under the date field. People type the month first, as the
+    hint says. The form then reads the day first, the tenant's way. Same swapped day, different code.</p> <h2>One day</h2> <p>Five reports move a booking by a day. 12 May (Tuesday)
+    shows as 11 May (Monday). 6 October (Tuesday) shows as Monday. Every June booking is a day off,
+    and other months are not. A client in Lisbon gets Tuesday and a client in Toronto gets Monday for
+    the same meeting. One invite arrives before the booking was made.</p> <p class="sum svelte-1op6c6"><strong>412</strong> reports in #4471 · <strong>3</strong> problems</p> <table><thead><tr><th>problem</th><th>reports</th><th>tenants</th><th>seen</th></tr></thead><tbody><!--[--><tr><td><code>parser</code></td><td>374</td><td>11</td><td>2026-04-01 → 2026-10-04</td></tr><tr><td><code>hint</code></td><td>33</td><td>3</td><td>2026-04-17 → 2026-09-22</td></tr><tr><td><code>one-day</code></td><td>5</td><td>5</td><td>2026-04-02 → 2026-10-04</td></tr><!--]--></tbody></table><!----> <!--[0--><p class="stamp svelte-1280m42">desk ref <b class="svelte-1280m42">DR-Y8D1-3ZJJ</b></p><!--]--><!----><!----></main> <footer class="svelte-e2jw2j">Pages are written by people. Tables and charts are built from data at render time.</footer></div><!--]--><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1tgydr0 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.VF44qkDw.js"),
+						import("./_app/immutable/entry/app.CO9guZlG.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

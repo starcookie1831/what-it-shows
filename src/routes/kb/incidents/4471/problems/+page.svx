@@ -1,0 +1,32 @@
+---
+layout: runbook
+title: '#4471 splits into three problems'
+owner: Song Lee
+status: draft
+reviewed: 2026-10-28
+signature: Song Lee
+---
+
+<script>
+  import ProblemTable from '#lib/kb/ProblemTable.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+  const signature = 'Song Lee';
+</script>
+
+#4471 holds every date report the desk merged, and the incident page calls that one known parser bug. The reports are three problems. Each one needs its own ticket. The counts below are computed from the export.
+
+## Parser
+
+Day-first tenants send dates day first. The shared parser reads the month first, so 7 April lands on 4 July. This is the app, email, and booking-v2 reports, apart from the one-day reports below.
+
+## Hint
+
+booking-v3 prints `MM/DD/YYYY` under the date field. People type the month first, as the hint says. The form then reads the day first, the tenant's way. Same swapped day, different code.
+
+## One day
+
+Five reports move a booking by a day. 12 May (Tuesday) shows as 11 May (Monday). 6 October (Tuesday) shows as Monday. Every June booking is a day off, and other months are not. A client in Lisbon gets Tuesday and a client in Toronto gets Monday for the same meeting. One invite arrives before the booking was made.
+
+<ProblemTable ticket={4471} />
+
+<RenderStamp {signature} />
