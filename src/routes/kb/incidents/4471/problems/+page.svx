@@ -4,13 +4,13 @@ title: '#4471 splits into three problems'
 owner: Song Lee
 status: draft
 reviewed: 2026-10-28
-signature: Song Lee
+signature: v1.eyJzdWIiOiIxODMzIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMjY1MzksImV4cCI6MTc5MzMxMjkzOX0.ABdjasqsIMjdqeXlOBVqp9z99BsKYd449vOBp8W9MKY
 ---
 
 <script>
   import ProblemTable from '#lib/kb/ProblemTable.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  const signature = 'Song Lee';
+  const signature = 'v1.eyJzdWIiOiIxODMzIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMjY1MzksImV4cCI6MTc5MzMxMjkzOX0.ABdjasqsIMjdqeXlOBVqp9z99BsKYd449vOBp8W9MKY';
 </script>
 
 #4471 holds every date report the desk merged, and the incident page calls that one known parser bug. The reports are three problems. Each one needs its own ticket. The counts below are computed from the export.

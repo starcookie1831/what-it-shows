@@ -3,7 +3,7 @@
   import ProblemTable from '#lib/kb/ProblemTable.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
-  const signature = 'Song Lee';
+  const signature = 'v1.eyJzdWIiOiIxODMzIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMjY1MzksImV4cCI6MTc5MzMxMjkzOX0.ABdjasqsIMjdqeXlOBVqp9z99BsKYd449vOBp8W9MKY';
 </script>
 
 <Runbook
